@@ -13,8 +13,25 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      width: {
+        '2/7': '28%',
+        'md':'50%',
+        '3/7': '95%',
+        '1/7': '85%',
+        'name-card':'234.5px'
+      },
+      colors: {
+        'head': '#0E104B',
+        'sub':'#F7A400',
+        'main':'#14176C',
+        'read-more':'#ECF6FA',
+        'page-layer':'#f8f8f8'
+      },
+      borderRadius: {
+        '6xl': '6.5rem', // Add a custom rounded corner value
+      },
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 }
 export default config
